@@ -1312,6 +1312,8 @@
                 showHiddenPage('emerging-tech');
             } else if (hash === '#tech-darkside') {
                 showHiddenPage('tech-darkside');
+             } else if (hash === '#4IR') {
+                showHiddenPage('4IR');
             } else if (hash === '#innovation-research') {
                 showHiddenPage('innovation-research');
             }
@@ -1330,6 +1332,10 @@
         function goToTechDarkside() {
             window.location.hash = 'tech-darkside';
             showHiddenPage('tech-darkside');
+        }
+         function goTo4IR() {
+            window.location.hash = '4IR';
+            showHiddenPage('4IR');
         }
 
         function goToInnovationResearch() {
