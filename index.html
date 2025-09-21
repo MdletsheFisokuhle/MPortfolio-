@@ -902,6 +902,41 @@
             <p>&copy; 2025 Fisokuhle Mdletshe. All rights reserved.</p>
         </footer>
     </div>
+    <!-- Hidden Page 2: Explanatory Report -->
+    <div id="report-document" class="hidden-page">
+        <a href="#" onclick="showMainContent()" class="back-btn">← Back to Portfolio</a>
+        
+        <div style="max-width: 1000px; margin: 0 auto; padding: 2rem;">
+            <h2 style="color: #64ffda; margin-bottom: 1rem;">Explanatory Report on the Development of the Article using an LLM</h2>
+            
+            <div style="background: rgba(255, 255, 255, 0.1); padding: 1rem; border-radius: 10px; margin-bottom: 2rem;">
+                <embed src="Supplementary Report on Article Development Using LLM.pdf" type="application/pdf" width="100%" height="600px" style="border-radius: 8px;">
+                <p style="text-align: center; margin-top: 1rem; color: #64ffda;">
+                    <a href="Supplementary Report on Article Development Using LLM.pdf" target="_blank" style="color: #64ffda; text-decoration: underline;">Download PDF Report</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Hidden Page 3: Explainer Video -->
+    <div id="explainer-video" class="hidden-page">
+    <a href="#" onclick="showMainContent()" class="back-btn">← Back to Portfolio</a>
+    
+    <div style="max-width: 800px; margin: 0 auto; padding: 2rem;">
+        <h2 style="color: #64ffda; margin-bottom: 1rem;">Explainer Video</h2>
+        
+        <div style="background: rgba(255, 255, 255, 0.1); padding: 1rem; border-radius: 10px; text-align: center;">
+            <video id="explainerVideoPlayer" controls style="width: 100%; max-width: 700px; border-radius: 8px;">
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <div style="margin-top: 1rem;">
+                <button onclick="playExplainerVideo()" style="background: rgba(100, 255, 218, 0.8); color: #000; padding: 0.5rem 1.5rem; border: none; border-radius: 5px; cursor: pointer; margin-right: 0.5rem;">▶️ Play Video</button>
+                <button onclick="pauseExplainerVideo()" style="background: rgba(255, 255, 255, 0.1); color: #64ffda; padding: 0.5rem 1.5rem; border: none; border-radius: 5px; cursor: pointer;">⏸️ Pause</button>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Hidden Page 1: Top 5 Hot IT Trends -->
 <div id="emerging-tech" class="hidden-page">
@@ -1344,6 +1379,11 @@
             } else if (hash === '#innovation-research') {
                 showHiddenPage('innovation-research');
             }
+             else if (hash === '#report-document') {
+                showHiddenPage('report-document');
+            } else if (hash === '#explainer-video') {
+               showHiddenPage('explainer-video');
+          }
         }
 
         // Check URL on page load
@@ -1368,6 +1408,31 @@
         function goToInnovationResearch() {
             window.location.hash = 'innovation-research';
             showHiddenPage('innovation-research');
+        }
+        // Add these navigation functions
+        function goToReportDocument() {
+            window.location.hash = 'report-document';
+            showHiddenPage('report-document');
+        }
+
+        function goToExplainerVideo() {
+            window.location.hash = 'explainer-video';
+            showHiddenPage('explainer-video');
+        }
+
+        // Video control functions
+        function playExplainerVideo() {
+            const video = document.getElementById('explainerVideoPlayer');
+            if (video) {
+                video.play().catch(function(error) {
+                    console.log('Video play failed:', error);
+                });
+            }
+        }
+
+        function pauseExplainerVideo() {
+            const video = document.getElementById('explainerVideoPlayer');
+            if (video) video.pause();
         }
     </script>
 </body>
