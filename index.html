@@ -634,6 +634,7 @@
                 <li><a href="#qualifications" onclick="showMainContent()">Qualifications</a></li>
                 <li><a href="#skills" onclick="showMainContent()">Skills</a></li>
                 <li><a href="#projects" onclick="showMainContent()">Projects</a></li>
+                 <li><a href="#academic-writing" onclick="showMainContent()">Academics</a></li>
                 <li><a href="#contact" onclick="showMainContent()">Contact</a></li>
             </ul>
         </div>
@@ -817,6 +818,32 @@
         </div>
             </div>
         </section>
+        <!-- Academic Writing Section -->
+        <section id="academic-writing">
+            <h2 class="section-title">Academic Writing & Research</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">📄Article</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Coding the Future: South Africa's Software Revolution in the Age of 4IR and 5IR</h3>
+                        <div style="background: rgba(255, 255, 255, 0.05); padding: 1rem; border-radius: 8px; margin: 1rem 0; border-left: 3px solid rgba(100, 255, 218, 0.8);">
+                            <h4 style="color: #64ffda; margin: 0 0 0.5rem 0; font-size: 0.9rem;">Abstract</h4>
+                            <p style="font-size: 0.85rem; line-height: 1.4; margin: 0;">The world is on the brink of a revolution unlike any other, one in which machines will not only carry out tasks but will also be able to think, learn, and work alongside people. From self-driving cars to algorithms predicting financial markets, technology is rewriting the rules of society and the economy at a pace once thought impossible. The Fourth Industrial Revolution (4IR) and the soon-to-be Fifth Industrial Revolution (5IR) are two examples of the world's most significant technological shifts to date. Software developers in South Africa are at the forefront of this change, entrusted with utilizing low-code development platforms, cloud computing, and artificial intelligence (AI) to stimulate economic growth and innovation. These changes provide both great opportunities and formidable difficulties, especially in the areas of infrastructure gaps and skills shortages that could prevent equal development.</p>
+                        </div>
+                        <div style="margin-top: 1rem;">
+                            <span style="background: rgba(100, 255, 218, 0.2); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; margin-right: 0.5rem;">4IR & 5IR</span>
+                            <span style="background: rgba(100, 255, 218, 0.2); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; margin-right: 0.5rem;">South Africa</span>
+                            <span style="background: rgba(100, 255, 218, 0.2); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem; margin-right: 0.5rem;">AI & Cloud Computing</span>
+                            <span style="background: rgba(100, 255, 218, 0.2); padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.8rem;">Economic Development</span>
+                        </div>
+                        <div style="margin-top: 1rem;">
+                            <a href="222016366_Mdletshe_Part1_Article.pdf" style="display: inline-block; background: rgba(100, 255, 218, 0.8); color: #000; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; margin-right: 0.5rem; font-size: 0.9rem;"> 📖 View Full Article</a>
+                            <a href="#" onclick="alert('Coming soon'); return false;" style="display: inline-block; background: rgba(255, 255, 255, 0.1); color: #64ffda; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; font-size: 0.9rem;">📎 Citation</a>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </section>
 
         <!-- Contact Section -->
         <section id="contact">
@@ -875,6 +902,42 @@
             <p>&copy; 2025 Fisokuhle Mdletshe. All rights reserved.</p>
         </footer>
     </div>
+    <!-- Hidden Page 2: Explanatory Report -->
+    <div id="report-document" class="hidden-page">
+        <a href="#" onclick="showMainContent()" class="back-btn">← Back to Portfolio</a>
+        
+        <div style="max-width: 1000px; margin: 0 auto; padding: 2rem;">
+            <h2 style="color: #64ffda; margin-bottom: 1rem;">Explanatory Report on the Development of the Article using an LLM</h2>
+            
+            <div style="background: rgba(255, 255, 255, 0.1); padding: 1rem; border-radius: 10px; margin-bottom: 2rem;">
+                <embed src="Assessment2Report FISOKUHLE_MDLETSHE.pdf" type="application/pdf" width="100%" height="600px" style="border-radius: 8px;">
+                <div style="text-align: center; margin-top: 1rem;">
+                    <a href="Assessment2Report FISOKUHLE_MDLETSHE.pdf" target="_blank" style="display: inline-block; background: rgba(100, 255, 218, 0.8); color: #000; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; margin-right: 0.5rem; font-size: 0.9rem;">👁️ View Report</a>
+                    <a href="Assessment2Report FISOKUHLE_MDLETSHE.pdf" download style="display: inline-block; background: rgba(255, 255, 255, 0.1); color: #64ffda; padding: 0.5rem 1rem; border-radius: 5px; text-decoration: none; font-size: 0.9rem;">📥 Download PDF</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hidden Page 3: Explainer Video -->
+    <div id="explainer-video" class="hidden-page">
+    <a href="#" onclick="showMainContent()" class="back-btn">← Back to Portfolio</a>
+    
+    <div style="max-width: 800px; margin: 0 auto; padding: 2rem;">
+        <h2 style="color: #64ffda; margin-bottom: 1rem;">Explainer Video</h2>
+        
+        <div style="background: rgba(255, 255, 255, 0.1); padding: 1rem; border-radius: 10px; text-align: center;">
+            <video id="explainerVideoPlayer" controls style="width: 100%; max-width: 700px; border-radius: 8px;">
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <div style="margin-top: 1rem;">
+                <button onclick="playExplainerVideo()" style="background: rgba(100, 255, 218, 0.8); color: #000; padding: 0.5rem 1.5rem; border: none; border-radius: 5px; cursor: pointer; margin-right: 0.5rem;">▶️ Play Video</button>
+                <button onclick="pauseExplainerVideo()" style="background: rgba(255, 255, 255, 0.1); color: #64ffda; padding: 0.5rem 1.5rem; border: none; border-radius: 5px; cursor: pointer;">⏸️ Pause</button>
+            </div>
+        </div>
+    </div>
+</div>
 
     <!-- Hidden Page 1: Top 5 Hot IT Trends -->
 <div id="emerging-tech" class="hidden-page">
@@ -1162,6 +1225,98 @@
         </article>
     </section>
 </div>
+    <!-- Hidden Page: Industrial Revolutions and Societal Impact -->
+<div id="4IR" class="hidden-page">
+    <a href="#" onclick="showMainContent()" class="back-btn">← Back to Portfolio</a>
+    
+    <section style="padding-top: 2rem;">
+        <div class="page-header">
+            <h1 class="page-title">The Industrial Revolutions: 4IR, 5IR, and Beyond</h1>
+            <p class="page-subtitle">Understanding Technological Transformation and Societal Implications</p>
+        </div>
+
+        <div class="content-grid" style="max-width: 900px; margin: 0 auto;">
+            <div class="content-card" style="text-align: left; padding: 2.5rem; line-height: 1.8;">
+                <h2 style="color: #2563eb; margin-bottom: 1.5rem; font-size: 1.8rem;">Introduction</h2>
+                <p style="line-height: 1.8; margin-bottom: 2rem; font-size: 1.1rem;">
+                    We stand at the intersection of multiple industrial revolutions, each characterized by distinct technological paradigms and societal transformations. The Fourth Industrial Revolution (4IR), popularized by Klaus Schwab in 2016, represents a convergence of technologies including artificial intelligence, gene editing, and advanced robotics that blur the lines between physical, digital, and biological spheres. As we advance toward the Fifth Industrial Revolution (5IR) and conceptualize a potential Sixth Industrial Revolution (6IR), it becomes crucial to critically examine both the transformative potential and inherent challenges these technological shifts present to society.
+                </p>
+
+                <h2 style="color: #2563eb; margin-bottom: 1.5rem; margin-top: 2.5rem; font-size: 1.6rem;">Characterizing the Industrial Revolutions</h2>
+                <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                    The 4IR is fundamentally defined by convergence and connectivity. Unlike previous industrial revolutions that were characterized by single breakthrough technologies, 4IR represents the fusion of cyber-physical systems, Internet of Things (IoT), artificial intelligence, and biotechnology. Preliminary data indicate that successfully scaling 4IR technology makes supply chains more efficient, reduces factory waste, and increases productivity, yet this efficiency comes with significant societal trade-offs.
+                </p>
+                <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                    The Fifth Industrial Revolution emerges as a paradigm shift toward human-centricity, seeking harmonious collaboration between humans and technology while addressing environmental challenges and prioritizing stakeholder well-being. Rather than simply advancing technological capabilities, 5IR represents a conscious effort to embed human values and sustainability into technological development. This evolution suggests recognition that the 4IR's focus on efficiency and automation may have created unintended consequences requiring correction.
+                </p>
+                <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                    The emerging concept of a Sixth Industrial Revolution, while still theoretical, points toward even deeper integration of human consciousness with technology, potentially involving brain-computer interfaces, quantum computing applications in daily life, and technologies that fundamentally alter human cognition and social structures. However, such projections require careful scrutiny given the speculative nature of these claims.
+                </p>
+
+                <h2 style="color: #16a34a; margin-bottom: 1.5rem; margin-top: 2.5rem; font-size: 1.6rem;">Potential Benefits and Opportunities</h2>
+                <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                    The 4IR presents significant opportunities for addressing global challenges through technological innovation. In healthcare, AI-driven diagnostics and personalized medicine promise improved patient outcomes and reduced costs. Smart cities utilizing IoT sensors and data analytics can optimize energy consumption, reduce traffic congestion, and enhance urban livability. Manufacturing benefits from predictive maintenance, quality control through machine learning, and flexible production systems that can rapidly adapt to changing consumer demands.
+                </p>
+                <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                    The 5IR builds upon these foundations by challenging broader service models, moving beyond simple digitization toward genuinely transformative approaches. In education, this could manifest as personalized learning systems that adapt to individual cognitive styles while maintaining human mentorship. Environmental applications might include circular economy models enabled by advanced materials science and biotechnology that can genuinely decouple economic growth from resource consumption.
+                </p>
+                <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                    For developing nations, these revolutions offer potential leapfrogging opportunities, allowing countries to bypass traditional infrastructure limitations through mobile technologies, renewable energy systems, and decentralized service delivery models. Digital financial services in Kenya and telemedicine programs in rural India demonstrate how technological advancement can democratize access to essential services.
+                </p>
+
+                <h2 style="color: #dc2626; margin-bottom: 1.5rem; margin-top: 2.5rem; font-size: 1.6rem;">Challenges and Critical Concerns</h2>
+                <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                    The adoption of 4IR technologies could bring substantial economic benefits but also significant social and economic disruption, including widening inequality if countervailing policies are not adopted. The challenge of technological unemployment looms large, with automation potentially displacing not only manual labor but also cognitive tasks previously considered immune to mechanization. McKinsey estimates suggest that 375 million workers globally may need to change occupational categories due to automation by 2030.
+                </p>
+                <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                    There is significant risk of widening the digital divide and exacerbating socioeconomic disparities if access to 4IR technologies remains uneven. This digital inequality manifests not only in access to technology but also in digital literacy, creating a bifurcated society where technological capabilities determine economic opportunities. The concentration of technological development within a few multinational corporations raises concerns about democratic governance and equitable distribution of technological benefits.
+                </p>
+                <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                    While 4IR introduced efficiency gains, it also brought challenges including privacy issues, job displacement, and ethical dilemmas. Surveillance capitalism, algorithmic bias, and the erosion of human agency present fundamental challenges to democratic societies. The 5IR's emphasis on human-centricity, while aspirational, may represent more of a marketing narrative than a genuine paradigm shift if the underlying economic incentives and power structures remain unchanged.
+                </p>
+                <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                    Critical examination reveals potential contradictions in the 5IR narrative. The same technologies that promise human-centric solutions may simultaneously concentrate power in fewer hands, reduce human autonomy through algorithmic decision-making, and create new forms of dependence on technological systems. The environmental promises of these revolutions must also be scrutinized against the massive energy consumption of data centers and the resource-intensive production of electronic devices.
+                </p>
+
+                <h2 style="color: #7c3aed; margin-bottom: 1.5rem; margin-top: 2.5rem; font-size: 1.6rem;">Critical Perspectives and Societal Implications</h2>
+                <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                    As IS&T professionals, we must critically evaluate the narratives surrounding these industrial revolutions. The techno-optimistic discourse often minimizes potential negative consequences while overstating benefits. Historical analysis reveals that previous industrial revolutions created both winners and losers, with benefits often concentrated among capital owners while costs were borne by workers and communities.
+                </p>
+                <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                    The concept of technological determinism embedded in much 4IR and 5IR discourse suggests that technological change is inevitable and inherently progressive. This perspective obscures the reality that technological development involves choices about values, priorities, and power distribution. Alternative approaches, such as participatory technology assessment and democratic innovation processes, could ensure that technological development serves broader societal interests rather than narrow commercial objectives.
+                </p>
+                <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                    The sustainability claims associated with these revolutions require particular scrutiny. While digital technologies can optimize resource use in specific applications, the overall environmental impact of increasing digitalization, including e-waste, energy consumption, and rare earth mining, presents significant challenges. The circular economy promises of 5IR may be undermined by the planned obsolescence built into many technological systems and the energy-intensive nature of cryptocurrency and blockchain technologies.
+                </p>
+
+                <h2 style="color: #2563eb; margin-bottom: 1.5rem; margin-top: 2.5rem; font-size: 1.6rem;">Implications for Society and IS&T Professionals</h2>
+                <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                    The trajectory from 4IR through 5IR and potentially to 6IR presents both unprecedented opportunities and significant risks for society. Success in navigating these transitions will require active engagement from IS&T professionals who understand both technological capabilities and societal implications. This includes advocating for inclusive design processes, transparent algorithmic systems, and technological development that genuinely serves human flourishing rather than merely increasing efficiency or profit.
+                </p>
+                <p style="line-height: 1.8; margin-bottom: 1.5rem;">
+                    Regulatory frameworks and governance structures must evolve to address the transnational nature of digital technologies while protecting democratic values and human rights. This requires collaboration between technologists, policymakers, and civil society to develop approaches that harness technological benefits while minimizing potential harms.
+                </p>
+                <p style="line-height: 1.8; margin-bottom: 2rem;">
+                    Ultimately, the question is not whether these industrial revolutions will occur, but how we can shape them to create a more equitable, sustainable, and humane future. This requires moving beyond deterministic thinking toward active engagement in the social construction of technology, ensuring that human values and societal needs guide technological development rather than being subordinated to it.
+                </p>
+
+                <h2 style="color: #2563eb; margin-bottom: 1.5rem; margin-top: 2.5rem; font-size: 1.6rem;">References</h2>
+                <div style="background: #eff6ff; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #2563eb; font-size: 0.95rem; line-height: 1.6;">
+                    <p style="margin-bottom: 0.8rem;">Agrawal, A., Gans, J., & Goldfarb, A. (2018). <em>Prediction machines: The simple economics of artificial intelligence</em>. Harvard Business Review Press.</p>
+                    <p style="margin-bottom: 0.8rem;">Brynjolfsson, E., & McAfee, A. (2014). <em>The second machine age: Work, progress, and prosperity in a time of brilliant technologies</em>. W. W. Norton & Company.</p>
+                    <p style="margin-bottom: 0.8rem;">Frey, C. B., & Osborne, M. A. (2017). The future of employment: How susceptible are jobs to computerisation? <em>Technological Forecasting and Social Change</em>, 114, 254-280.</p>
+                    <p style="margin-bottom: 0.8rem;">Manyika, J., Chui, M., Miremadi, M., Bughin, J., George, K., Willmott, P., & Dewhurst, M. (2017). A future that works: Automation, employment, and productivity. McKinsey Global Institute.</p>
+                    <p style="margin-bottom: 0.8rem;">Nahavandi, S. (2019). Industry 5.0—A human-centric solution. <em>Sustainability</em>, 11(16), 4371.</p>
+                    <p style="margin-bottom: 0.8rem;">Rifkin, J. (2014). <em>The zero marginal cost society: The internet of things, the collaborative commons, and the eclipse of capitalism</em>. Palgrave Macmillan.</p>
+                    <p style="margin-bottom: 0.8rem;">Schwab, K. (2016). <em>The fourth industrial revolution</em>. World Economic Forum.</p>
+                    <p style="margin-bottom: 0.8rem;">Schwab, K., & Davis, N. (2018). <em>Shaping the fourth industrial revolution</em>. World Economic Forum.</p>
+                    <p style="margin-bottom: 0.8rem;">World Economic Forum. (2020). The future of jobs report 2020. World Economic Forum.</p>
+                    <p style="margin-bottom: 0;">Zuboff, S. (2019). <em>The age of surveillance capitalism: The fight for a human future at the new frontier of power</em>. PublicAffairs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
 
     <script>
@@ -1220,9 +1375,16 @@
                 showHiddenPage('emerging-tech');
             } else if (hash === '#tech-darkside') {
                 showHiddenPage('tech-darkside');
+             } else if (hash === '#4IR') {
+                showHiddenPage('4IR');
             } else if (hash === '#innovation-research') {
                 showHiddenPage('innovation-research');
             }
+             else if (hash === '#report-document') {
+                showHiddenPage('report-document');
+            } else if (hash === '#explainer-video') {
+               showHiddenPage('explainer-video');
+          }
         }
 
         // Check URL on page load
@@ -1239,10 +1401,39 @@
             window.location.hash = 'tech-darkside';
             showHiddenPage('tech-darkside');
         }
+         function goTo4IR() {
+            window.location.hash = '4IR';
+            showHiddenPage('4IR');
+        }
 
         function goToInnovationResearch() {
             window.location.hash = 'innovation-research';
             showHiddenPage('innovation-research');
+        }
+        // Add these navigation functions
+        function goToReportDocument() {
+            window.location.hash = 'report-document';
+            showHiddenPage('report-document');
+        }
+
+        function goToExplainerVideo() {
+            window.location.hash = 'explainer-video';
+            showHiddenPage('explainer-video');
+        }
+
+        // Video control functions
+        function playExplainerVideo() {
+            const video = document.getElementById('explainerVideoPlayer');
+            if (video) {
+                video.play().catch(function(error) {
+                    console.log('Video play failed:', error);
+                });
+            }
+        }
+
+        function pauseExplainerVideo() {
+            const video = document.getElementById('explainerVideoPlayer');
+            if (video) video.pause();
         }
     </script>
 </body>
